@@ -1,1 +1,8 @@
 https://www.w3schools.com/python/default.asp
+
+
+User Name of Git : fa15be0001@maju.edu.pk
+password : fyp123!@#
+
+user name of Tellor : FYP-BE-E2
+password : fyp123!@#
