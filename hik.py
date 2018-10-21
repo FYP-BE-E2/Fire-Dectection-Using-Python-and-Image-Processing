@@ -1,22 +1,16 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture()
-cap.open('rtsp://admin:Raoabrehman12!%40@192.168.1.63/1',cv2.CAP_FFMPEG)
+cap = cv2.VideoCapture('rtsp://admin:password@192.168.1.64/Streaming/Channels/101')
 
-while(True):
-     # Capture frame-by-frame
+while(cap.isOpened()):
     ret, frame = cap.read()
 
-    # Our operations on the frame come here
-    
+    gray = cv2.cvtColor(frame, ret)
 
-    # Display the resulting frame
-    cv2.imshow('frame',ret)
-
+    cv2.imshow('frame',gray)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()
