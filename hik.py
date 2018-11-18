@@ -1,7 +1,10 @@
+
+
+
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture('rtsp://admin:password@192.168.1.64/Streaming/Channels/101')
+cap = cv2.VideoCapture('rtsp://admin:Raoabrehman12!%40@192.168.1.64/Streaming/Channels/101')
 
 while(cap.isOpened()):
     ret, frame = cap.read()
